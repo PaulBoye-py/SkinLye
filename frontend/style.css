@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400&family=Ubuntu:wght@300;400&display=swap');
+
+* *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+#dropdown {
+    display: none;
+}
+
+.page-head {
+    border: 1px solid red;
+    display: flex;
+    margin: 2em 4em 2em;
+    /* width: 80%; */
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: 5em;
+    padding: auto;
+    
+}
+
+.nav-head {
+    flex-grow: 1;
+    text-align: center;
+}
+
+h2.logo-text {
+    flex-grow: 1;
+    border: 1px solid black ;
+    float: left;
+    
+
+}
+
+.navbar {
+   display: inline-flex;
+   justify-content:space-evenly;
+   width: 100%;
+   flex-grow: 10;
+   border: 1px solid blue;
+}
+
+.page-head .nav-head {
+    flex-grow: 1;
+    /* border: 1px solid green; */
+    padding-left: .5em;
+    padding-right: .5em;
+    display: inline-block;
+    font-size: 20px;
+    justify-content: flex-end;
+}
+
+.login-btn {
+    flex-grow: 1;
+    float: right;
+    margin: auto;
+}
+
+.main-container {
+    display: grid;
+    
+    width: 100%;
+    grid-template-areas: 
+    'a'
+    'b'
+    'c'
+    'd'
+    'e'
+    'f'
+    'g';
+    
+}
+
+.container-1 {
+    grid-area: a;
+    display: flex;
+    margin: 4em;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+}
+
+.con-1 {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.con-1 .con-1-a h1 {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 6rem;
+    font-weight: 400;
+}
+
+.con-1 .con-1-a h3 {
+    font-family: 'Inter', sans-serif;
+    font-size: 2.2rem;
+    color: #5A5858;
+    font-weight: 500;
+    padding-bottom: 0.2em;
+    
+}
+
+.con-1 .con-1-a button {
+    cursor: pointer;
+    text-align: center;
+    background-color: #473B32;
+    color: #ffff;
+    border-radius: 40px;
+    font-family: 'Inter', sans-serif;
+    font-size: 2.2rem;
+    border: none;
+    padding: .5em 1em;
+    transition: background-color 1s;
+}
+
+.con-1 .con-1-a button:hover {
+    background-color: #1B1613;
+
+}
+
+#upper-p {
+    margin-top: 2em;
+}
+
+#bottom-p {
+    margin-bottom: 2em;
+}
+
+
+
+.container-2 {
+    grid-area: b;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #473B32;
+    height: 100%;
+    margin-bottom: 4em;
+}
+
+.con-2-text h1 {
+    color: #FCFCFC;
+    font-family: 'Ubuntu', sans-serif;
+    text-align: center;
+    padding: auto;
+    font-weight: 350;
+}
+
+.con-2-text p {
+    color: #FCFCFC;
+    font-family: 'Inter', sans-serif;
+    font-weight: 200;
+
+
+}
+
+
+
+.container-3 {
+    grid-area: c;
+    margin-top: 4em;
+}
+
+.container-4 {
+    grid-area: d;
+}
+
+.container-5 {
+    grid-area: e;
+}
+
+.container-6 {
+    grid-area: f;
+}
+
+.container-7 {
+    grid-area: g;
+}
