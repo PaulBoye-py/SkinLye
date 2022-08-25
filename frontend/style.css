@@ -1,6 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400&family=Ubuntu:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe&family=Inter:wght@200;300;400&family=Ubuntu:wght@300;400&display=swap');
 
-* *{
+*{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -10,7 +10,7 @@
 }
 
 .page-head {
-    border: 1px solid red;
+    /* border: 1px solid red; */
     display: flex;
     margin: 2em 4em 2em;
     /* width: 80%; */
@@ -26,10 +26,15 @@
     text-align: center;
 }
 
-h2.logo-text {
+h1.logo-text {
     flex-grow: 1;
-    border: 1px solid black ;
+    /* border: 1px solid black ; */
     float: left;
+    font-family: 'Ubuntu', sans-serif;
+    color: #050505;
+    font-size: 2.2em;
+    font-weight: 600;
+    cursor: pointer;
     
 
 }
@@ -39,7 +44,15 @@ h2.logo-text {
    justify-content:space-evenly;
    width: 100%;
    flex-grow: 10;
-   border: 1px solid blue;
+   /* border: 1px solid blue; */
+
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #050505;
+    font-family: 'Inter', sans-serif;
+
 }
 
 .page-head .nav-head {
@@ -56,11 +69,26 @@ h2.logo-text {
     flex-grow: 1;
     float: right;
     margin: auto;
+    cursor: pointer;
+    box-shadow: 2px 2px 5px #5A5858;
+    text-align: center;
+    background-color: #473B32;
+    color: #ffff;
+    border-radius: 20px;
+    font-family: 'Inter', sans-serif;
+    font-size: 1.8rem;
+    border: none;
+    padding: .2em 1.8em;
+    transition: background-color .5s;
+    transition-timing-function: ease-in-out;
+}
+
+.login-btn:hover {
+    background-color: #1B1613;
 }
 
 .main-container {
     display: grid;
-    
     width: 100%;
     grid-template-areas: 
     'a'
@@ -76,8 +104,8 @@ h2.logo-text {
 .container-1 {
     grid-area: a;
     display: flex;
-    margin: 4em;
-    flex-direction: row;
+    margin: 0em 4em 2em;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     width: auto;
@@ -89,19 +117,21 @@ h2.logo-text {
     width: 100%;
 }
 
+.con-1 .con-1-a {
+    margin-top: 2em;
+}
 .con-1 .con-1-a h1 {
     font-family: 'Ubuntu', sans-serif;
-    font-size: 6rem;
+    font-size: 4rem;
     font-weight: 400;
 }
 
 .con-1 .con-1-a h3 {
     font-family: 'Inter', sans-serif;
-    font-size: 2.2rem;
+    font-size: 1.8rem;
     color: #5A5858;
     font-weight: 500;
     padding-bottom: 0.2em;
-    
 }
 
 .con-1 .con-1-a button {
@@ -109,17 +139,18 @@ h2.logo-text {
     text-align: center;
     background-color: #473B32;
     color: #ffff;
-    border-radius: 40px;
+    border-radius: 20px;
     font-family: 'Inter', sans-serif;
-    font-size: 2.2rem;
+    font-size: 1.8rem;
     border: none;
-    padding: .5em 1em;
-    transition: background-color 1s;
+    padding: .3em 1.5em;
+    transition: background-color .5s;
+    transition-timing-function: ease-in-out;
+    box-shadow: 2px 2px 5px #5A5858;
 }
 
 .con-1 .con-1-a button:hover {
     background-color: #1B1613;
-
 }
 
 #upper-p {
@@ -130,6 +161,10 @@ h2.logo-text {
     margin-bottom: 2em;
 }
 
+.con-1-b img {
+    position: relative;
+    width: 100%;
+}
 
 
 .container-2 {
@@ -139,7 +174,7 @@ h2.logo-text {
     justify-content: space-evenly;
     background-color: #473B32;
     height: 100%;
-    margin-bottom: 4em;
+    margin-bottom: 6em;
 }
 
 .con-2-text h1 {
@@ -147,13 +182,14 @@ h2.logo-text {
     font-family: 'Ubuntu', sans-serif;
     text-align: center;
     padding: auto;
-    font-weight: 350;
+    font-weight: 400;
 }
 
 .con-2-text p {
     color: #FCFCFC;
     font-family: 'Inter', sans-serif;
     font-weight: 200;
+    font-size: larger;
 
 
 }
@@ -163,20 +199,598 @@ h2.logo-text {
 .container-3 {
     grid-area: c;
     margin-top: 4em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* margin: 4em; */
+    width: auto;
 }
+
+.con-3-A {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.con-3-a {
+    align-self: flex-start;
+    width: 50%;
+    margin-left: 4em;
+    margin-top: 5em;
+}
+
+.con-3-a h1 {
+    font-family: 'Ubuntu', sans-serif;
+    color: #050505;
+    font-size: 4rem;
+    font-weight: 400;   
+}
+
+.con-3-a h3 {
+    font-family: 'Inter', sans-serif;
+    color: #5A5858;
+    font-size: 1.8rem;
+    font-weight: 500;
+    padding-bottom: 0.2em;
+}
+
+.con-3-a-2 img {
+    margin-right: 4em;
+}
+#con-3-bottom-h1 {
+    margin-bottom: .6em;
+}
+.con-3-B {
+    align-self: flex-start;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    width: 60%;
+    height: 100%;
+    margin-top: -12em;
+    margin-left: 4em;
+    border-radius: 20px;
+    box-shadow: 2px 2px 5px #5A5858;
+    background-color: white;
+}
+
+.con-3-b-general {
+    /* align-content: center; */
+    /* border: 1px solid rebeccapurple; */
+    margin: 3em;
+    align-items: center;
+    
+}
+
+.con-3-b-general-div {
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+}
+
+.con-3-b-general-div img {
+    padding-bottom: 1em;
+}
+
+.con-3-b-general-div h2 {
+    padding-bottom: 1em;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.con-3-b-general-div p {
+    font-family: 'Inter', sans-serif;
+    color: #5A5858;
+}
+
+#con-3-b-general-div-lower-p {
+    padding-bottom: 1.5em;
+}
+
+#con-3-b-general-div-lower-p1 {
+    padding-bottom: 1.5em;
+}
+
+.con-3-b-general-div h3 {
+    padding-bottom: 1em;
+    font-family: 'Inter', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.con-3-C {
+    align-self: flex-start;
+    margin-left: 4em;
+    margin-top: 4em;
+}
+
+.con-3-C button {
+    cursor: pointer;
+    box-shadow: 2px 2px 5px #5A5858;
+    text-align: center;
+    background-color: #473B32;
+    color: #ffff;
+    border-radius: 20px;
+    font-family: 'Inter', sans-serif;
+    font-size: 1.8rem;
+    border: none;
+    padding: .3em 1.5em;
+    transition: background-color .5s;
+    transition-timing-function: ease-in-out;   
+}
+
+.con-3-C button:hover {
+    background-color: #1B1613;
+    
+}
+
 
 .container-4 {
     grid-area: d;
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    width: auto;
+    margin: 4em;
 }
 
+.container-4 h3 {
+    margin-bottom: 1em;
+    font-family: 'Inter', sans-serif;
+
+}
+
+.container-4 h1 {
+    margin-bottom: 1em;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.grid-container {
+    display: grid;
+    row-gap: 2em;
+    column-gap: 1em;
+    width: 100%;
+    grid-template-areas: 'a2 b2 c2'
+                         'd2 e2 f2';
+}
+
+.grid-container .grid-1 {
+    grid-area: a2;
+}
+.grid-container .grid-1 img {
+    width: 391px;
+    height: 272px;
+}
+
+.grid-container .grid-2 {
+    grid-area: b2;
+    display: flex;
+    justify-content: center;
+}
+
+.grid-container .grid-2 img {
+    width: 391px;
+    height: 272px;
+}
+    
+
+.grid-container .grid-3 {
+    grid-area: c2;
+}
+
+.grid-container .grid-3 img {
+    width: 391px;
+    height: 272px;
+}
+
+.grid-container .grid-4 {
+    grid-area: d2;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.grid-container .grid-4 .grid-4-text {
+    width: 100;
+}
+
+.grid-container .grid-4 .grid-4-text p {
+    font-family: 'Inter', sans-serif;
+    font-size: 1.2em;
+    padding-bottom: .2em;
+    color: #5A5858;
+    font-weight: 500;
+    
+}
+
+#last-p {
+    margin-bottom: 2.8em;
+}
+
+#grid-4-btn {
+    cursor: pointer;
+    box-shadow: 2px 2px 5px #5A5858;
+    text-align: center;
+    background-color: #473B32;
+    color: #ffff;
+    border-radius: 20px;
+    font-family: 'Inter', sans-serif;
+    font-size: 1.8rem;
+    border: none;
+    padding: .3em 1.5em;
+    transition: background-color .5s;
+    transition-timing-function: ease-in-out;  
+}
+
+
+#grid-4-btn:hover {
+    background-color: #1B1613;
+}
+
+.grid-container .grid-5 {
+    grid-area: e2;
+    display: flex;
+    justify-content: center;
+}
+
+.grid-container .grid-5 img {
+    width: 391px;
+    height: 272px;
+}
+
+.grid-container .grid-6 {
+    grid-area: f2;
+}
+
+.grid-container .grid-6 img {
+    width: 391px;
+    height: 272px;
+}
 .container-5 {
     grid-area: e;
+    margin: 4em;
 }
+
+.container-5 h3 {
+    margin-bottom: 1em;
+    font-family: 'Inter', sans-serif;
+}
+
+#visit {
+    margin-bottom: 1em;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.card-1, .card-2, .card-3, .card-4, .card-5, .card-6, .card-7 {
+    margin-right: 40em;
+    margin-bottom: 2em;
+}
+
+
+.con-5-cards {
+    display: flex;
+    flex-direction: column;
+    background-color: #473B32;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1rem;
+
+}
+
+.con-5-cards .card-top {
+    display: flex;
+    flex-wrap: nowrap;
+    align-self: flex-start;
+    margin-left: 3.5em;
+}
+
+.con-5-cards .card-top .card-number {
+    color: 	#A9A9A9;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 2em;
+    margin-right: .5em;
+    margin-top: .3em;
+}
+
+.con-5-cards .card-top .card-title {
+    color: 	#FCFCFC;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1em;
+    font-weight: 200;
+    font-style: normal;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.con-5-cards .card-middle {
+    color: #B4B4B4;
+    font-family: 'Inter', sans-serif;
+    font-size: .8em;
+    margin-bottom: 1em;
+
+}
+.con-5-cards .card-bottom {
+    align-self: flex-end;
+    margin-right: 3.5em;
+    margin-bottom: 1em;
+    color: 	#FFFF;
+    font-family: 'Inter', sans-serif;
+    font-size: .8em;
+    cursor: pointer;
+}
+
+.container-5 .cards {
+    display: grid;
+    width: 100%;
+    grid-template-areas: 
+    'con1 con2'
+    'con3 con4'
+    'con5 con6'
+    'con7'
+    ;
+    /* grid-template-areas: 
+    'con1 con con1'
+    'con4'
+    'con5 con6'
+    'con7' ; */
+    /* position:static; */
+    /* grid-template-rows: repeat(1, 15em); */
+    /* grid-template-columns: repeat(7, 90vw) */
+
+}
+
+/* .cards {
+    display: flex;
+    padding: 1em;
+} */
+
+
+
+
+.container-5 .cards .card-1 {
+    grid-area: con1;
+    width: 50%;
+    position:relative;
+    margin-left: -4em;
+   
+}
+
+.container-5 .cards .card-2 {
+    grid-area: con2;
+    width: 50%;
+    position:relative;
+    
+    
+}
+
+.container-5 .cards .card-3 {
+    grid-area: con3;
+}
+
+.container-5 .cards .card-4 {
+    grid-area: con4;
+}
+
+.container-5 .cards .card-5 {
+    grid-area: con5;
+}
+
+.container-5 .cards .card-6 {
+    grid-area: con6;
+}
+
+.container-5 .cards .card-7 {
+    grid-area: con7;
+}
+
+
+
+
+
+
+/* .container-5 .cards .con-5-cards {
+    display: flex;
+} */
+
+.container-5 .cards .con-5-cards .card-top {
+    display: flex;
+}
+
+.explore-btn {
+    cursor: pointer;
+    box-shadow: 2px 2px 5px #5A5858;
+    text-align: center;
+    background-color: #473B32;
+    color: #ffff;
+    border-radius: 20px;
+    font-family: 'Inter', sans-serif;
+    font-size: 1.8rem;
+    border: none;
+    padding: .3em 1.5em;
+    transition: background-color .5s;
+    transition-timing-function: ease-in-out;  
+}
+
+.explore-btn:hover{
+    background-color: #1B1613;
+} 
+
 
 .container-6 {
     grid-area: f;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    background-color: #473B32;
 }
 
+.container-6 .con-6-a {
+    align-self: flex-start;
+    width: 50%;
+    margin-left: 4em;
+}
+
+.container-6 .con-6-a h1 {
+    font-family: 'Ubuntu', sans-serif;
+    color: #FCFCFC;
+    font-size: 3rem;
+    font-weight: 400; 
+}
+
+#con-6aa-upper-h1 {
+    margin-top: 2em; 
+}
+
+#con-6aa-lower-h1 {
+    margin-bottom: .5em;
+}
+
+.container-6 .con-6-a p {
+    color: #B4B4B4;
+    font-family: 'Inter', sans-serif;
+    font-size: 1.5em;
+}
+
+#con-6-a-lower-p {
+    margin-bottom: 2em;
+}
+
+.container-6 .con-6-b {
+    /* align-self: flex-end; */
+    width: 50%;
+    margin-left: 4em;
+}
+
+.con-6-b .form {
+    position: relative;
+    margin-top: 4em;
+    margin-bottom: 2em;
+}
+
+.con-6-b .form input {
+    font-size: 1em;
+    width: 70%;
+    border: none;
+    padding-top: 2em;
+    border-bottom: 2px solid #FCFCFC;
+    outline: none;
+    display: block;
+    background: transparent;
+    color: #B4B4B4;
+    font-family: 'Inter', sans-serif;
+}
+
+.con-6-b .form label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 1em;
+    font-family: 'Ubuntu', sans-serif;
+    color: #FCFCFC;
+}
+
+.container-6 .con-6-b button {
+    cursor: pointer;
+    box-shadow: 2px 2px 5px #5A5858;
+    text-align: center;
+    background-color: #FFFF;
+    color: #000;
+    border-radius: 20px;
+    font-family: 'Inter', sans-serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+    border: none;
+    padding: .3em 1.5em;
+    transition: background-color .3s;
+}
+
+.container-6 .con-6-b button:hover {
+    background-color:#D9D9D9;
+}
 .container-7 {
     grid-area: g;
+    display: flex;
+    width: 80%;
+    margin: 2em 4em;
+    
+}
+
+.container-7 .con-7-a {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2em;
+    width: 50%;
+    margin-left: 2em;
+}
+
+.container-7 .con-7-a h1 {
+    margin-bottom: 1em;
+    font-size: 2.2em;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.container-7 .con-7-a p {
+    margin-bottom: 1em;
+    font-family: 'Inter', sans-serif;
+    color: #5A5858;
+    margin: 0px;
+}
+
+#con-7-a-lower-p {
+    margin-bottom: 2em;
+}
+
+.container-7 .con-7-a .social-media img {
+    padding-right: 1em;
+    cursor: pointer;
+}
+
+.container-7 .con-7-b {
+    margin-top: 2em;
+    width: 50%;
+}
+
+.container-7 .con-7-b .bottom-right-sec {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    margin-left: 4em;
+}
+
+.container-7 .con-7-b .bottom-right-sec .bottom-pst h1 {
+    margin-bottom: 1em;
+    font-size: 1.5em;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.container-7 .con-7-b .bottom-right-sec .bottom-pst p {
+    margin-bottom: 0.2em;
+    font-family: 'Inter', sans-serif;
+    color: #5A5858;
+    cursor: pointer;
+}
+
+.container-7 .con-7-b .bottom-right-sec .bottom-pst p:hover {
+    color: #1B1613;
+}
+
+.foot {
+    display: flex;
+    justify-content: center;
+}
+
+footer p {
+    font-family: 'Alumni Sans Pinstripe', sans-serif;
+    font-weight:bold;
+    color: #5A5858;
+}
+
+#copyright {
+    color: #5A5858;
+    width: 20px;
+    height: 20px;
 }
